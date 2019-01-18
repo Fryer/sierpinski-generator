@@ -109,21 +109,39 @@ canvas
 	<tr><td><label for="preset">Preset:</label></td><td><select id="preset" onchange="loadPreset(this.value)">
 		<option value="eyJ3aWR0aCI6IjkwMCIsImhlaWdodCI6IjkwMCIsInJhdGUiOiIxMDAwIiwic3RvcEF0IjoiMCIsIngiOiIwIiwieSI6IjAiLCJ6b29tIjoiMSIsImxlcnAiOiIuNSIsImJhY2tncm91bmQiOiIjMTAxMDEwIiwiY29sb3IiOiIjZmZiZjdmIiwiYWxwaGEiOiIuMSIsInBvaW50cyI6IltbMCwgMF1dIiwibGVycE92ZXJyaWRlIjoiIiwiZHJhd092ZXJyaWRlIjoiIn0=">Initial (empty)</option>
 		<optgroup label="Simple">
-			<option value="eyJ3aWR0aCI6IjkwMCIsImhlaWdodCI6IjkwMCIsInJhdGUiOiIxMDAwIiwic3RvcEF0IjoiMCIsIngiOiIwIiwieSI6IjAiLCJ6b29tIjoiMSIsImxlcnAiOiIuNSIsImJhY2tncm91bmQiOiIjMTAxMDEwIiwiY29sb3IiOiIjZmZiZjdmIiwiYWxwaGEiOiIuMSIsInBvaW50cyI6IltbMCwgICAtLjVdLFxuIFstLjUsIC41XSxcbiBbLjUsICAuNV1dIiwibGVycE92ZXJyaWRlIjoiIiwiZHJhd092ZXJyaWRlIjoiIn0=">Sierpinski Triangle</option>
+			<option value="eyJ3aWR0aCI6IjEwNTAiLCJoZWlnaHQiOiI5MDAiLCJyYXRlIjoiMTAwMCIsInN0b3BBdCI6IjAiLCJ4IjoiMCIsInkiOiIwIiwiem9vbSI6IjEiLCJsZXJwIjoiLjUiLCJiYWNrZ3JvdW5kIjoiIzEwMTAxMCIsImNvbG9yIjoiI2ZmYmY3ZiIsImFscGhhIjoiLjEiLCJwb2ludHMiOiJbWzAsICAgLS41XSxcbiBbLS41LCAuNV0sXG4gWy41LCAgLjVdXSIsImxlcnBPdmVycmlkZSI6IiIsImRyYXdPdmVycmlkZSI6IiJ9" selected>Triangle</option>
+			<option value="eyJ3aWR0aCI6IjkwMCIsImhlaWdodCI6IjkwMCIsInJhdGUiOiIxMDAwIiwic3RvcEF0IjoiMCIsIngiOiIwIiwieSI6IjAiLCJ6b29tIjoiMSIsImxlcnAiOiIuNSIsImJhY2tncm91bmQiOiIjMTAxMDEwIiwiY29sb3IiOiIjZmZiZjdmIiwiYWxwaGEiOiIuMSIsInBvaW50cyI6IltbLS41LCAtLjVdLFxuIFstLjUsIC41XSxcbiBbLjUsICAuNV1dIiwibGVycE92ZXJyaWRlIjoiIiwiZHJhd092ZXJyaWRlIjoiIn0=">Right Angle</option>
+			<option value="eyJ3aWR0aCI6IjkwMCIsImhlaWdodCI6IjkwMCIsInJhdGUiOiIxMDAwIiwic3RvcEF0IjoiMCIsIngiOiIwIiwieSI6IjAiLCJ6b29tIjoiMSIsImxlcnAiOiIuNTUiLCJiYWNrZ3JvdW5kIjoiIzEwMTAxMCIsImNvbG9yIjoiI2ZmYmY3ZiIsImFscGhhIjoiLjEiLCJwb2ludHMiOiJbWy0uNSwgLS41XSxcbiBbLjUsICAtLjVdLFxuIFstLjUsIC41XSxcbiBbLjUsICAuNV1dIiwibGVycE92ZXJyaWRlIjoiIiwiZHJhd092ZXJyaWRlIjoiIn0=">Square</option>
+			<option value="eyJ3aWR0aCI6IjkwMCIsImhlaWdodCI6IjkwMCIsInJhdGUiOiIxMDAwIiwic3RvcEF0IjoiMCIsIngiOiIwIiwieSI6IjAiLCJ6b29tIjoiMSIsImxlcnAiOiIuNTUiLCJiYWNrZ3JvdW5kIjoiIzEwMTAxMCIsImNvbG9yIjoiI2ZmYmY3ZiIsImFscGhhIjoiLjEiLCJwb2ludHMiOiJbWzAsICAgLS41XSxcbiBbLS41LCAwXSxcbiBbLjUsICAwXSxcbiBbMCwgICAuNV1dIiwibGVycE92ZXJyaWRlIjoiIiwiZHJhd092ZXJyaWRlIjoiIn0=">Diamond</option>
+			<option value="eyJ3aWR0aCI6IjkwMCIsImhlaWdodCI6IjkwMCIsInJhdGUiOiIxMDAwIiwic3RvcEF0IjoiMCIsIngiOiIwIiwieSI6Ii0uMDUiLCJ6b29tIjoiMSIsImxlcnAiOiIuNSIsImJhY2tncm91bmQiOiIjMTAxMDEwIiwiY29sb3IiOiIjZmZiZjdmIiwiYWxwaGEiOiIuMSIsInBvaW50cyI6IltbMCwgICAgIC0uNV0sXG4gWy0uNDc1LCAtLjE1XSxcbiBbLjQ3NSwgIC0uMTVdLFxuIFstLjMsICAgLjRdLFxuIFsuMywgICAgLjRdXSIsImxlcnBPdmVycmlkZSI6IiIsImRyYXdPdmVycmlkZSI6IiJ9">Pentagon</option>
+			<option value="eyJ3aWR0aCI6IjEwNTAiLCJoZWlnaHQiOiI5MDAiLCJyYXRlIjoiMTAwMCIsInN0b3BBdCI6IjAiLCJ4IjoiMCIsInkiOiIwIiwiem9vbSI6IjEiLCJsZXJwIjoiLjUiLCJiYWNrZ3JvdW5kIjoiIzEwMTAxMCIsImNvbG9yIjoiI2ZmYmY3ZiIsImFscGhhIjoiLjEiLCJwb2ludHMiOiJbWy0uMjUsIC0uNV0sXG4gWy4yNSwgIC0uNV0sXG4gWy0uNSwgIDBdLFxuIFsuNSwgICAwXSxcbiBbLS4yNSwgLjVdLFxuIFsuMjUsICAuNV1dIiwibGVycE92ZXJyaWRlIjoiIiwiZHJhd092ZXJyaWRlIjoiIn0=">Hexagon</option>
 		</optgroup>
-		<optgroup label="Colorful">
-			<option value="eyJ3aWR0aCI6IjM2MDAiLCJoZWlnaHQiOiIzNjAwIiwicmF0ZSI6IjEwMDAwIiwic3RvcEF0IjoiMCIsIngiOiIwIiwieSI6IjAiLCJ6b29tIjoiMi8zIiwibGVycCI6Ii41IiwiYmFja2dyb3VuZCI6IiMxMDEwMTAiLCJjb2xvciI6IiNmZmJmN2YiLCJhbHBoYSI6Ii4xIiwicG9pbnRzIjoiW1stLjI1LCAtLjI1LCAnI2ZmN2YwMCddLFxuIFsuMjUsICAtLjI1LCAnI2ZmN2YwMCddLFxuIFstLjI1LCAuMjUsICAnI2ZmN2YwMCddLFxuIFsuMjUsICAuMjUsICAnI2ZmN2YwMCddLFxuIFswLCAgICAtMS82LCAnIzAwN2ZmZiddLFxuIFswLCAgICAxLzYsICAnIzAwN2ZmZiddLFxuIFstMS82LCAwLCAgICAnIzAwN2ZmZiddLFxuIFsxLzYsICAwLCAgICAnIzAwN2ZmZiddLFxuIFswLCAgICAwLCAgICAnIzAwYmYwMCddXSIsImxlcnBPdmVycmlkZSI6ImwgPSAyIC8gKDEgKyBNYXRoLnNxcnQoeCAqIHggKyB5ICogeSkgKiAuNSk7IiwiZHJhd092ZXJyaWRlIjoiZHJhdyhkeCwgZHkpO1xuaWYgKGRjICE9IGNvbG9yKSB7XG4gIGNvbG9yID0gZGM7XG4gIGRyYXcoZHgsIGR5KTtcbn0ifQ==" selected>Bubble Flower</option>
+		<optgroup label="Augmented">
+			<option value="eyJ3aWR0aCI6IjEwNTAiLCJoZWlnaHQiOiI5MDAiLCJyYXRlIjoiMTAwMCIsInN0b3BBdCI6IjAiLCJ4IjoiMCIsInkiOiIwIiwiem9vbSI6IjEiLCJsZXJwIjoiLjUiLCJiYWNrZ3JvdW5kIjoiIzEwMTAxMCIsImNvbG9yIjoiI2ZmYmY3ZiIsImFscGhhIjoiLjEiLCJwb2ludHMiOiJbWzAsICAgLS41XSxcbiBbLS41LCAuNV0sXG4gWy41LCAgLjVdLFxuIFswLCAgIC41XV0iLCJsZXJwT3ZlcnJpZGUiOiIiLCJkcmF3T3ZlcnJpZGUiOiIifQ==">Pyramid</option>
+			<option value="eyJ3aWR0aCI6IjkwMCIsImhlaWdodCI6IjkwMCIsInJhdGUiOiIxMDAwIiwic3RvcEF0IjoiMCIsIngiOiIwIiwieSI6IjAiLCJ6b29tIjoiMSIsImxlcnAiOiIuNDUiLCJiYWNrZ3JvdW5kIjoiIzEwMTAxMCIsImNvbG9yIjoiI2JmOWY3ZiIsImFscGhhIjoiLjEiLCJwb2ludHMiOiJbWy0uNSwgLS41XSxcbiBbLS41LCAuNV0sXG4gWy41LCAgLjVdLFxuIFswLCAgIDBdXSIsImxlcnBPdmVycmlkZSI6IiIsImRyYXdPdmVycmlkZSI6IiJ9">Slope</option>
+			<option value="eyJ3aWR0aCI6IjkwMCIsImhlaWdodCI6IjkwMCIsInJhdGUiOiIxMDAwIiwic3RvcEF0IjoiMCIsIngiOiIwIiwieSI6IjAiLCJ6b29tIjoiMSIsImxlcnAiOiIuNTUiLCJiYWNrZ3JvdW5kIjoiIzEwMTAxMCIsImNvbG9yIjoiI2JmZmZmZiIsImFscGhhIjoiLjEiLCJwb2ludHMiOiJbWy0uNSwgLS41XSxcbiBbLjUsICAtLjVdLFxuIFstLjUsIC41XSxcbiBbLjUsICAuNV0sXG4gWzAsICAgLS41XV0iLCJsZXJwT3ZlcnJpZGUiOiIiLCJkcmF3T3ZlcnJpZGUiOiIifQ==">Platforms</option>
+			<option value="eyJ3aWR0aCI6IjkwMCIsImhlaWdodCI6IjkwMCIsInJhdGUiOiIxMDAwIiwic3RvcEF0IjoiMCIsIngiOiIwIiwieSI6IjAiLCJ6b29tIjoiMSIsImxlcnAiOiIuNTUiLCJiYWNrZ3JvdW5kIjoiIzEwMTAxMCIsImNvbG9yIjoiI2JmZmY3ZiIsImFscGhhIjoiLjEiLCJwb2ludHMiOiJbWzAsICAgLS41XSxcbiBbLS41LCAwXSxcbiBbLjUsICAwXSxcbiBbMCwgICAuNV0sXG4gWzAsICAgMF1dIiwibGVycE92ZXJyaWRlIjoiIiwiZHJhd092ZXJyaWRlIjoiIn0=">Clover</option>
+			<option value="eyJ3aWR0aCI6IjkwMCIsImhlaWdodCI6IjkwMCIsInJhdGUiOiIxMDAwIiwic3RvcEF0IjoiMCIsIngiOiIwIiwieSI6Ii0uMDUiLCJ6b29tIjoiMSIsImxlcnAiOiIuNTUiLCJiYWNrZ3JvdW5kIjoiIzEwMTAxMCIsImNvbG9yIjoiI2JmYmZmZiIsImFscGhhIjoiLjEiLCJwb2ludHMiOiJbWzAsICAgICAtLjVdLFxuIFstLjQ3NSwgLS4xNV0sXG4gWy40NzUsICAtLjE1XSxcbiBbLS4zLCAgIC40XSxcbiBbLjMsICAgIC40XSxcbiBbMCwgICAgIDAsICcjZGZkZmZmJ11dIiwibGVycE92ZXJyaWRlIjoiIiwiZHJhd092ZXJyaWRlIjoiIn0=">Snowflake</option>
+			<option value="eyJ3aWR0aCI6IjEwNTAiLCJoZWlnaHQiOiI5MDAiLCJyYXRlIjoiMTAwMCIsInN0b3BBdCI6IjAiLCJ4IjoiMCIsInkiOiIwIiwiem9vbSI6IjEiLCJsZXJwIjoiLjUiLCJiYWNrZ3JvdW5kIjoiIzQwNDA0MCIsImNvbG9yIjoiI2ZmYmYwMCIsImFscGhhIjoiLjEiLCJwb2ludHMiOiJbWy0uMjUsIC0uNV0sXG4gWy4yNSwgIC0uNV0sXG4gWy0uNSwgIDBdLFxuIFsuNSwgICAwXSxcbiBbLS4yNSwgLjVdLFxuIFsuMjUsICAuNV0sXG4gWy0zLzgsIC0uMjUsICcjMDAwJywgLjNdLFxuIFszLzgsICAtLjI1LCAnIzAwMCcsIC4zXSxcbiBbMCwgICAgLjUsICAgJyMwMDAnLCAuM11dIiwibGVycE92ZXJyaWRlIjoiIiwiZHJhd092ZXJyaWRlIjoiIn0=">Radioactive</option>
+			<option value="eyJ3aWR0aCI6IjkwMCIsImhlaWdodCI6IjkwMCIsInJhdGUiOiIxMDAwIiwic3RvcEF0IjoiMCIsIngiOiIwIiwieSI6IjAiLCJ6b29tIjoiMSIsImxlcnAiOiIuNTUiLCJiYWNrZ3JvdW5kIjoiIzE4MTAxMCIsImNvbG9yIjoiI2JmOWY5ZiIsImFscGhhIjoiLjEiLCJwb2ludHMiOiJbWy0uNSwgIC0uNV0sXG4gWy41LCAgIC0uNV0sXG4gWy0uNSwgIC41XSxcbiBbLjUsICAgLjVdLFxuIFswLCAgICAtMS82LCAnI2JmYmZiZiddLFxuIFstMS82LCAwLCAgICAnI2JmYmZiZiddLFxuIFsxLzYsICAwLCAgICAnI2JmYmZiZiddLFxuIFswLCAgICAxLzYsICAnI2JmYmZiZiddXSIsImxlcnBPdmVycmlkZSI6IiIsImRyYXdPdmVycmlkZSI6IiJ9">Mace</option>
+		</optgroup>
+		<optgroup label="Complex">
+			<option value="eyJ3aWR0aCI6IjE4MDAiLCJoZWlnaHQiOiIxODAwIiwicmF0ZSI6IjQwMDAiLCJzdG9wQXQiOiIwIiwieCI6IjAiLCJ5IjoiMCIsInpvb20iOiIxIiwibGVycCI6Ii44IiwiYmFja2dyb3VuZCI6IiMyMDE4MTgiLCJjb2xvciI6IiNhZmJmY2YiLCJhbHBoYSI6Ii4xIiwicG9pbnRzIjoiW1stLjUsICAtLjVdLFxuIFsuNSwgICAtLjVdLFxuIFstLjUsICAuNV0sXG4gWy41LCAgIC41XSxcbiBbMCwgICAgLTEvNiwgJyNjZmJmYWYnXSxcbiBbLTEvNiwgMCwgICAgJyNjZmJmYWYnXSxcbiBbMS82LCAgMCwgICAgJyNjZmJmYWYnXSxcbiBbMCwgICAgMS82LCAgJyNjZmJmYWYnXV0iLCJsZXJwT3ZlcnJpZGUiOiJ2YXIgZG0gPSAoeCp4ICsgeSp5KSoqLjU7XG5sID0gMSAtIGRtICogbGVycDsiLCJkcmF3T3ZlcnJpZGUiOiIifQ==">Heavy Metal</option>
+			<option value="eyJ3aWR0aCI6IjE4MDAiLCJoZWlnaHQiOiIxODAwIiwicmF0ZSI6IjQwMDAiLCJzdG9wQXQiOiIwIiwieCI6IjAiLCJ5IjoiMCIsInpvb20iOiIxLjUiLCJsZXJwIjoiLjU1IiwiYmFja2dyb3VuZCI6IiMxMDEwMTAiLCJjb2xvciI6IiNmZmJmN2YiLCJhbHBoYSI6Ii4xIiwicG9pbnRzIjoiW1swLCAgICAgLS41LCAgJyNmZmJmMDAnXSxcbiBbLS40NzUsIC0uMTUsICcjZmY3ZjAwJ10sXG4gWy40NzUsICAtLjE1LCAnI2ZmN2YwMCddLFxuIFstLjMsICAgLjQsICAgJyNmZjQwMDAnXSxcbiBbLjMsICAgIC40LCAgICcjZmY0MDAwJ11dIiwibGVycE92ZXJyaWRlIjoidmFyIGR4ID0geCAtIG54XG52YXIgZHkgPSB5IC0gbnk7XG5sID0gKGR4KmR4ICsgZHkqZHkpKiouNSAqIGxlcnA7IiwiZHJhd092ZXJyaWRlIjoiIn0=">Fire Star</option>
+			<option value="eyJ3aWR0aCI6IjE4MDAiLCJoZWlnaHQiOiIxODAwIiwicmF0ZSI6IjQwMDAiLCJzdG9wQXQiOiIwIiwieCI6IjAiLCJ5IjoiMCIsInpvb20iOiIyLzMiLCJsZXJwIjoiLjUiLCJiYWNrZ3JvdW5kIjoiIzEwMTAxMCIsImNvbG9yIjoiI2ZmYmY3ZiIsImFscGhhIjoiLjEiLCJwb2ludHMiOiJbWy0uMjUsIC0uMjUsICcjZmY3ZjAwJ10sXG4gWy4yNSwgIC0uMjUsICcjZmY3ZjAwJ10sXG4gWy0uMjUsIC4yNSwgICcjZmY3ZjAwJ10sXG4gWy4yNSwgIC4yNSwgICcjZmY3ZjAwJ10sXG4gWzAsICAgIC0xLzYsICcjMDA3ZmZmJ10sXG4gWzAsICAgIDEvNiwgICcjMDA3ZmZmJ10sXG4gWy0xLzYsIDAsICAgICcjMDA3ZmZmJ10sXG4gWzEvNiwgIDAsICAgICcjMDA3ZmZmJ10sXG4gWzAsICAgIDAsICAgICcjMDBiZjAwJ11dIiwibGVycE92ZXJyaWRlIjoidmFyIGRtID0gKHgqeCArIHkqeSkqKi41O1xubCA9IDIgLyAoMSArIGRtICogbGVycCk7IiwiZHJhd092ZXJyaWRlIjoiZHJhdyhkeCwgZHkpO1xuaWYgKGRjICE9IGNvbG9yKSB7XG4gIGNvbG9yID0gZGM7XG4gIGRyYXcoZHgsIGR5KTtcbn0ifQ==">Bubble Flower</option>
+			<option value="eyJ3aWR0aCI6IjE4MDAiLCJoZWlnaHQiOiIxODAwIiwicmF0ZSI6IjQwMDAiLCJzdG9wQXQiOiIwIiwieCI6IjAiLCJ5IjoiLS4xIiwiem9vbSI6IjMvOCIsImxlcnAiOiIuNzUiLCJiYWNrZ3JvdW5kIjoiI2JmY2ZkZiIsImNvbG9yIjoiI2ZmOWY5ZiIsImFscGhhIjoiLjI1IiwicG9pbnRzIjoiW1swLCAgICAgLS41XSxcbiBbLS40NzUsIC0uMTVdLFxuIFsuNDc1LCAgLS4xNV0sXG4gWy0uMywgICAuNF0sXG4gWy4zLCAgICAuNF0sXG4gWzAsICAgICAwLCAnIzlmZGY3ZiddXSIsImxlcnBPdmVycmlkZSI6InZhciBkbSA9ICh4KnggKyB5KnkpKiouNTtcbmwgPSAyLjUgLyAoMSArIGRtICogbGVycCk7IiwiZHJhd092ZXJyaWRlIjoiIn0=">Sakura</option>
+			<option value="eyJ3aWR0aCI6IjIxMDAiLCJoZWlnaHQiOiIxODAwIiwicmF0ZSI6IjQwMDAiLCJzdG9wQXQiOiIwIiwieCI6IjAiLCJ5IjoiMCIsInpvb20iOiIxIiwibGVycCI6IjEiLCJiYWNrZ3JvdW5kIjoiIzIwMTgwOCIsImNvbG9yIjoiIzAwYmYwMCIsImFscGhhIjoiLjA1IiwicG9pbnRzIjoiW1stLjI1LCAtLjVdLFxuIFsuMjUsICAtLjVdLFxuIFstLjUsICAwXSxcbiBbLjUsICAgMF0sXG4gWy0uMjUsIC41XSxcbiBbLjI1LCAgLjVdLFxuIFstMy84LCAtLjI1LCAnIzEwMDAwMCcsIC4zXSxcbiBbMy84LCAgLS4yNSwgJyMxMDAwMDAnLCAuM10sXG4gWzAsICAgIC41LCAgICcjMTAwMDAwJywgLjNdXSIsImxlcnBPdmVycmlkZSI6InZhciBkbSA9ICh4KnggKyB5KnkpKiouNTtcbmwgPSAxIC0gZG0gKiBsZXJwOyIsImRyYXdPdmVycmlkZSI6IiJ9">Toxic</option>
 		</optgroup>
 	</select></td></tr>
-	<tr><td><label for="width">Size:</label></td><td><input id="width" value="3600" size="5"><label for="height">x</label><input id="height" value="3600" size="5"></td></tr>
-	<tr><td><label for="rate">Rate:</label></td><td><input id="rate" name="rate" value="10000" size="5"></td></tr>
+	<tr><td><label for="width">Size:</label></td><td><input id="width" value="1050" size="5"><label for="height">x</label><input id="height" value="900" size="5"></td></tr>
+	<tr><td><label for="rate">Rate:</label></td><td><input id="rate" name="rate" value="1000" size="5"></td></tr>
 	<tr><td><label for="stopAt">Stop at:</label></td><td><input id="stopAt" name="stopAt" value="0" size="5"> (0 = endless)</td></tr>
 </tbody></table>
 
 <h2>Transform:</h2>
 <table><tbody>
 	<tr><td><label for="x">Offset:</label></td><td><input id="x" name="offsetX" value="0" size="5"><label for="y">, </label><input id="y" name="offsetY" value="0" size="5"></td></tr>
-	<tr><td><label for="zoom">Zoom:</label></td><td><input id="zoom" name="zoom" value="2/3" size="5"></td></tr>
+	<tr><td><label for="zoom">Zoom:</label></td><td><input id="zoom" name="zoom" value="1" size="5"></td></tr>
 </tbody></table>
 
 <h2>Options:</h2>
@@ -136,20 +154,14 @@ canvas
 
 <h2>Points:</h2>
 <textarea id="points" name="points" cols="32" rows="10">
-[[-.25, -.25, '#ff7f00'],
- [.25,  -.25, '#ff7f00'],
- [-.25, .25,  '#ff7f00'],
- [.25,  .25,  '#ff7f00'],
- [0,    -1/6, '#007fff'],
- [0,    1/6,  '#007fff'],
- [-1/6, 0,    '#007fff'],
- [1/6,  0,    '#007fff'],
- [0,    0,    '#00bf00']]</textarea><br>
+[[0,   -.5],
+ [-.5, .5],
+ [.5,  .5]]</textarea><br>
 Format: <code>[[x, y, color, alpha], ...]</code>
 
 <h2>Override lerp code:</h2>
 <textarea id="lerpOverride" cols="32" rows="4" placeholder="l = lerp;">
-l = 2 / (1 + Math.sqrt(x * x + y * y) * .5);</textarea><br>
+</textarea><br>
 Lerp: <code>lerp</code><br>
 Last dot x, y: <code>x, y</code><br>
 Point x, y: <code>nx, ny</code><br>
@@ -159,17 +171,13 @@ Modified lerp: <code>l</code>
 <textarea id="drawOverride" cols="32" rows="6" placeholder="color = dc;
 alpha = da;
 draw(dx, dy);">
-draw(dx, dy);
-if (dc != color) {
-  color = dc;
-  draw(dx, dy);
-}</textarea><br>
+</textarea><br>
 Dot x, y, color, alpha: <code>dx, dy, dc, da</code><br>
 Draw color, alpha: <code>color, alpha</code><br>
 Draw dot: <code>draw(x, y)</code>
 
 </div>
-<canvas id="canvas" width="3600" height="3600"></canvas>
+<canvas id="canvas" width="1050" height="900"></canvas>
 <script>
 
 canvas = document.getElementById('canvas');
